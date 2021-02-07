@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        #navbarSupportedContent ul li a{
+            color: #000000;
+        }
+        #inputSearch{
+            width: 70%;
+        }
+        .form-control{
+            border-radius: 0;
+        }
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #f68350;
+            outline: 0;
+            box-shadow: none;
+        }
+        .btn-outline-success{
+            color: #f68350;
+            border-color: #f68350; 
+            border-radius: 0 !important;
+        }
+        .btn-outline-success:hover{
+            background-color: #f68350;
+            border-color: #f68350;
+        }
+        #contentShow{
+            margin: 45px 0;
+        }
+        #contentShow .card-body{
+            padding: 1rem !important;
+        }
+        #contentShow .card-title {
+            margin-bottom: 0 !important;
+        }
+        #contentShow a{
+            text-decoration: none !important;
+            color: #000000;
+        }
+        .card{
+            margin-bottom: 15px;
+        }
+        #detailsShow{
+            margin: 45px 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img style="width: 100px;" src="image/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="javascript:void(0);">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0);">Contact Us</a>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+          </nav>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <form class="form-inline">
+                        <input id="inputSearch"  class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contentShow">
+        <div class="container">
+            <div class="row" id="totalSearchData"></div>
+        </div>
+    </section>
+    
+    <section id="detailsShow">
+        <div class="container">
+            <div class="row justify-content-center" id="detailsData">
+                <!-- <div class="col-8">
+                    <div class="card">
+                        <img class="card-img-top" style="height: 400px;" src="image/hello.jpg" alt="">
+                        <div class="card-body">
+                          <h2 class="card-title">Card title</h5>
+                          <ul>
+                              <li>one list</li>
+                          </ul>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
